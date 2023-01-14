@@ -50,10 +50,11 @@ pub enum CommandLevelOne {
 #[derive(Debug, Clone , Serialize, Deserialize , PartialEq)]
 pub enum CommandLevelTwo {
     Goto((i32,i32,i32)),
-    MineGoto(Vec<(i32,i32,i32)>),
+    MineGoto(Vec<(i32,i32,i32)>,Block,i32),
     Craft(Item),
     Share(Item),
     Receive(Item),
+    Refuel(i32),
     Cancel,
 }
 
