@@ -21,6 +21,11 @@ pub struct Turtles {
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
+pub struct World {
+    pub blocks:HashMap<(i32,i32,i32),Block>,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
 pub enum WorldUpdate {
     BlockUpdate((i32,i32,i32),Block),
     TurtleUpdate(Turtle),
