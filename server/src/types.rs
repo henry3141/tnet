@@ -1,6 +1,5 @@
 use std::collections::HashMap;
 use serde::{Serialize, Deserialize};
-use crate::promise::Promise;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub enum Block {

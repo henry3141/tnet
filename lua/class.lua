@@ -1,4 +1,3 @@
-#include print_table.lua
 function class(data) 
     local class = {}
     class.__prototype = data
