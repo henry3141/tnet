@@ -8,4 +8,5 @@ pub trait Command {
     fn get_turtles(&self) -> Vec<Turtle>;
     fn get_command(&self,id:i32) -> String;
     fn update(&mut self,u:WorldUpdate);
+    fn eta(&self) -> i32;
 }
