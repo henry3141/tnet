@@ -10,3 +10,4 @@ pub trait Command {
     fn update(&mut self,u:WorldUpdate);
     fn eta(&self) -> i32;
 }
+

@@ -1,6 +1,8 @@
 use std::collections::HashMap;
 use serde::{Serialize, Deserialize};
 
+use crate::promise::Promise;
+
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub enum Block {
     Air,
@@ -29,4 +31,10 @@ pub struct World {
 pub enum WorldUpdate {
     BlockUpdate((i32,i32,i32),Block),
     TurtleUpdate(Turtle),
+}
+
+#[derive(Debug, Clone,)]
+pub struct RequestCommand {
+    pub id:i32,
+    pub promise:Promise<String>,
 }
