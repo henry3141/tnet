@@ -1,6 +1,0 @@
-microk8s 
-k3s
-write serivces
-use k8s to deploy the app and set up vn
-rancher
-database:structored ralational data
